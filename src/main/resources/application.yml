@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: order-service
+
+services:
+  inventory: "http://inventory-service.internal/api/inventory"
+
+logging:
+  level:
+    com.storex.order: INFO
